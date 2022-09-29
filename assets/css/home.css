@@ -34,7 +34,7 @@ body {
     grid-template-rows: auto auto auto;
     grid-template-areas:
         'hd hd hd hd hd hd hd hd'
-        'sd sd sd main main main main main'
+        'main main main main main main main main'
         'ft ft ft ft ft ft ft ft';
     border: 1px #b2b2b2 solid;
 }
@@ -121,6 +121,7 @@ header .nav li.active a {
 
 .content {
     grid-area: main;
+    padding: 10px;
 }
 
 footer {
