@@ -154,9 +154,9 @@ footer {
     height: 31px;
 }
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
+.menu-btn,
+.menu-btn::before,
+.menu-btn::after {
     display: none;
     background-color: #fff;
     position: absolute;
@@ -172,9 +172,9 @@ footer {
     .container {
         width: 90%;
     }
-    .menu-button,
-    .menu-button::before,
-    .menu-button::after {
+    .menu-btn,
+    .menu-btn::before,
+    .menu-btn::after {
         display: block;
     }
     nav {
