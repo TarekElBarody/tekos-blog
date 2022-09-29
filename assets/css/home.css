@@ -9,13 +9,18 @@ body {
 
 .container {
     display: grid;
-    width: 100%;
-    grid-template-columns: 33% 33% 33%;
+    background-color: #f2f2f2;
+    width: 95%;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 10px 20px;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     grid-template-areas:
         'hd hd hd hd hd hd hd hd'
         'sd sd sd main main main main main'
         'ft ft ft ft ft ft ft ft';
+    border: 1px #b2b2b2 solid;
 }
 
 header {
@@ -23,7 +28,7 @@ header {
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    border-bottom: 1px #d2d2d2 solid;
     color: #333333;
 }
 
@@ -39,8 +44,8 @@ header h1 img {
     display: block;
     float: left;
     text-decoration: none;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     align-items: center;
 }
 
@@ -48,7 +53,7 @@ header h1 a {
     display: block;
     float: left;
     width: auto;
-    padding-top: 10px;
+    padding-top: 5px;
     margin: 0px 10px;
     text-decoration: none;
     align-items: center;
@@ -66,11 +71,17 @@ header .nav {
     display: flex;
     width: 100;
     justify-content: right;
+    margin-top: 40px;
 }
 
 header .nav li {
     display: block;
     margin: 0px 10px;
+}
+
+header .nav li a {
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .sidebar {
