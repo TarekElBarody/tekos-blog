@@ -69,7 +69,6 @@ nav {
 
 header .nav {
     display: flex;
-    width: 100%;
     justify-content: right;
     margin-top: 40px;
 }
@@ -94,4 +93,18 @@ header .nav li a {
 
 footer {
     grid-area: ft;
+}
+
+.copyrights {
+    margin-top: 15px;
+    float: left;
+}
+
+.w3-css-p {
+    float: right;
+}
+.w3-css-image {
+    border: 0;
+    width: 88px;
+    height: 31px;
 }
