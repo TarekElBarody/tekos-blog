@@ -1,6 +1,11 @@
 /* Import Google Fonts Poppins & Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Roboto:wght@400;600;800&display=swap');
 
-/* Import Home CSS and Posts CSS Files */
+/* Import Font Awesome CSS Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+/* Import Home CSS File */
 @import url('home.css');
+
+/* Import Post CSS File */
 @import url('post.css');

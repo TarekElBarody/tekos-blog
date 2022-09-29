@@ -1,15 +1,31 @@
 /* Set Global HTML Elelments */
 body {
-    background-color: rgb(209, 209, 209);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     color: #000000;
     font-family: Poppins, Helvetica, sans-serif;
     font-size: 12pt;
     font-weight: 500;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .container {
     display: grid;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     width: 95%;
     max-width: 1280px;
     margin: 0px auto;
@@ -38,6 +54,7 @@ header h1 {
     order: 0;
     width: 30%;
     align-items: center;
+    font-size: 24pt;
 }
 
 header h1 img {
@@ -47,6 +64,13 @@ header h1 img {
     width: 60px;
     height: 60px;
     align-items: center;
+}
+
+a {
+    color: #333333;
+}
+a:hover {
+    color: red;
 }
 
 header h1 a {
@@ -78,9 +102,17 @@ header .nav li {
     margin: 0px 10px;
 }
 
+header .nav li i {
+    margin: 0px 10px;
+}
+
 header .nav li a {
     text-decoration: none;
     font-weight: 600;
+}
+
+header .nav li.active a {
+    color: red;
 }
 
 .sidebar {
@@ -93,6 +125,7 @@ header .nav li a {
 
 footer {
     grid-area: ft;
+    border-top: 1px #d2d2d2 solid;
 }
 
 .copyrights {
@@ -100,11 +133,12 @@ footer {
     float: left;
 }
 
-.w3-css-p {
+.w3-p {
     float: right;
+    margin-right: 10px;
 }
 
-.w3-css-image {
+.w3-image {
     border: 0;
     width: 88px;
     height: 31px;
