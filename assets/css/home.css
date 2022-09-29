@@ -89,12 +89,16 @@ nav {
     order: 0;
     width: 70%;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 header .nav {
     display: flex;
     justify-content: right;
     margin-top: 40px;
+    overflow: hidden;
+    position: relative;
 }
 
 header .nav li {
@@ -124,6 +128,11 @@ header .nav li.active a {
     padding: 10px;
 }
 
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
 footer {
     grid-area: ft;
     border-top: 1px #d2d2d2 solid;
@@ -143,4 +152,50 @@ footer {
     border: 0;
     width: 88px;
     height: 31px;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+    right: 0;
+    top: 17px;
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: 90%;
+    }
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: block;
+    }
+    nav {
+        text-align: left;
+        display: block;
+        order: 0;
+        width: 30%;
+        align-items: center;
+    }
+
+    header h1 {
+        text-align: left;
+        display: block;
+        order: 0;
+        width: 70%;
+        align-items: center;
+        font-size: 22pt;
+    }
+    header .nav {
+        display: none;
+        justify-content: right;
+        margin-top: 40px;
+    }
 }
