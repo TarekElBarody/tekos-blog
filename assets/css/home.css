@@ -1,6 +1,9 @@
-/* Set Global HTML Elelments */
+/* Set Global HTML Elelments 
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #23d5ab, #0180ae, #23a6d5, #23d5ab);
+*/
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #9611ca, #236ad5, #23a6d5, #d874ff);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     color: #000000;
@@ -37,6 +40,7 @@ body {
         'main main main main main main main main'
         'ft ft ft ft ft ft ft ft';
     border: 1px #b2b2b2 solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 header {
@@ -89,7 +93,6 @@ nav {
     order: 0;
     width: 70%;
     align-items: center;
-    overflow: hidden;
     position: relative;
 }
 
@@ -141,6 +144,18 @@ footer {
 .copyrights {
     margin-top: 15px;
     float: left;
+    font-weight: bold;
+}
+
+.social {
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .w3-p {
@@ -157,6 +172,7 @@ footer {
 .menu-btn,
 .menu-btn::before,
 .menu-btn::after {
+    cursor: pointer;
     display: none;
     background-color: #fff;
     position: absolute;
@@ -168,6 +184,10 @@ footer {
     font-size: 20pt;
 }
 
+#menu-toggle {
+    display: none;
+}
+
 @media screen and (max-width: 980px) {
     .container {
         width: 90%;
@@ -177,25 +197,40 @@ footer {
     .menu-btn::after {
         display: block;
     }
-    nav {
-        text-align: left;
-        display: block;
-        order: 0;
-        width: 30%;
-        align-items: center;
-    }
 
     header h1 {
         text-align: left;
         display: block;
         order: 0;
-        width: 70%;
+        width: 80%;
         align-items: center;
         font-size: 22pt;
     }
+
+    nav {
+        position: relative;
+        width: 20%;
+        align-items: center;
+    }
+    header .nav.active {
+        display: block;
+    }
+
     header .nav {
         display: none;
-        justify-content: right;
-        margin-top: 40px;
+        position: absolute;
+        top: -5px;
+        right: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border: #d2d2d2 solid 1px;
+        padding: 5px 10px;
+        width: 200px;
+    }
+
+    header .nav li {
+        margin-top: 10px;
     }
 }
