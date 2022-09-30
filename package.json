@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "deploy": "git add . && git commit -m \"Design Update\" && git push origin main"
+    "deploy": "git add . && git commit -m \"Blog Post Update\" && git push origin main"
   },
   "author": "",
   "license": "ISC",
