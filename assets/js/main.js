@@ -12,3 +12,7 @@ function menyToggle() {
         document.getElementById('nav-menu').classList.remove('active')
     }
 }
+
+function gotoURL(url) {
+    document.location.href = url
+}
