@@ -1,1 +1,17 @@
+.vscode
+.vscode/*
+env
+env/*
+.env
+.env.test
 node_modules
+node_modules/*
+build
+build/*
+public
+public/*
+dist
+dist/*
+logs
+logs/*
+
