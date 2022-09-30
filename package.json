@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "deploy": "git add . && git commit -m \"Design Update\" && git push origin main"
+    "deploy": "cross-env UUID=$(uuid) git add . && git commit -m \"Design Update\"+UUID && git push origin main"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }
