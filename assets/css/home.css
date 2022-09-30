@@ -130,7 +130,7 @@ header .nav li a {
 }
 
 header .nav li.active a {
-    color: red;
+    color: #236ad5;
 }
 
 .menu-btn,
@@ -200,7 +200,7 @@ header .nav li.active a {
 
 .post-card button {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-    background: red;
+    background: linear-gradient(-45deg, #9611ca, #236ad5, #23a6d5, #d874ff);
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -211,7 +211,8 @@ header .nav li.active a {
 }
 
 .post-card button:hover {
-    background: #236ad5;
+    background: linear-gradient(-45deg, #23a6d5, #d874ff);
+    color: #333333;
 }
 
 footer {
