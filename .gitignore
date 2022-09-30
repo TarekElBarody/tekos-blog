@@ -14,4 +14,4 @@ dist
 dist/*
 logs
 logs/*
-
+.htaccess
