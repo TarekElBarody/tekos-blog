@@ -233,6 +233,27 @@ header .nav li.active a {
     color: #333333;
 }
 
+.boxes-card {
+    width: 95%;
+    display: grid;
+    margin: 15px 10px 20px 10px;
+    border-top: 1px #b2b2b2 solid;
+    padding: 25px;
+    text-align: left;
+}
+
+.boxes-card h2 {
+    text-align: left;
+}
+
+.boxes-card p {
+    font-size: 18pt;
+}
+
+.boxes-card .post-card p {
+    font-size: 14pt;
+}
+
 footer {
     grid-area: ft;
     border-top: 1px #d2d2d2 solid;
@@ -289,6 +310,25 @@ footer {
     color: #333333;
 }
 
+.contact-info {
+    font-size: 22pt;
+}
+
+.contact-info a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.contact-info i {
+    text-decoration: none;
+    font-size: 28pt;
+    padding-left: 10px;
+}
+
+.contact-info p {
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 980px) {
     .container {
         width: 90%;
@@ -340,9 +380,18 @@ footer {
         flex-direction: column;
     }
 
-    .big {
+    .post-card {
         width: 92%;
         margin: 10px 5px;
+    }
+
+    .big {
+        width: 92%;
+    }
+
+    .boxes-card {
+        margin: 0;
+        padding: 10px;
     }
 }
 

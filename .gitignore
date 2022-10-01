@@ -15,3 +15,6 @@ dist/*
 logs
 logs/*
 .htaccess
+.prettierrc
+.prettierignore
+package-lock.json
