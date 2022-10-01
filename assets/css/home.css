@@ -216,7 +216,7 @@ header .nav li.active a {
     border: 1px #b2b2b2 solid;
 }
 
-.post-card button {
+button {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
     background: linear-gradient(-45deg, #9611ca, #236ad5, #23a6d5, #d874ff);
     color: white;
@@ -228,7 +228,7 @@ header .nav li.active a {
     border-radius: 5px;
 }
 
-.post-card button:hover {
+button:hover {
     background: linear-gradient(-45deg, #23a6d5, #d874ff);
     color: #333333;
 }
@@ -242,15 +242,27 @@ header .nav li.active a {
     text-align: left;
 }
 
-.boxes-card h2 {
+.boxes-info {
+    width: 95%;
+    display: block;
+    margin: 15px 10px 20px 10px;
+    border-top: 1px #b2b2b2 solid;
+    padding: 25px;
     text-align: left;
 }
 
-.boxes-card p {
+.boxes-card h2,
+.boxes-info h2 {
+    text-align: left;
+}
+
+.boxes-card p,
+.boxes-info p {
     font-size: 18pt;
 }
 
-.boxes-card .post-card p {
+.boxes-card .post-card p,
+.boxes-info .post-card p {
     font-size: 14pt;
 }
 
@@ -311,7 +323,16 @@ footer {
 }
 
 .contact-info {
-    font-size: 22pt;
+    font-size: 16pt;
+    float: left;
+    width: 35%;
+}
+
+.contact-form {
+    float: right;
+    width: 60%;
+    padding-left: 20px;
+    border-left: 1px #d2d2d2 solid;
 }
 
 .contact-info a {
@@ -321,12 +342,44 @@ footer {
 
 .contact-info i {
     text-decoration: none;
-    font-size: 28pt;
+    font-size: 22pt;
     padding-left: 10px;
 }
 
 .contact-info p {
     margin-top: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form form div {
+    font-size: 16pt;
+    display: grid;
+    width: 95%;
+    padding: 10px 10px;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 'lb hd hd hd hd hd';
+}
+
+.contact-form form label {
+    font-size: 16pt;
+    grid-area: lb;
+    padding-top: 10px;
+}
+
+.contact-form form input {
+    font-size: 16pt;
+    grid-area: hd;
+    padding: 10px;
+}
+
+.contact-form button {
+    font-size: 16pt;
+    max-width: 60%;
+    float: right;
 }
 
 @media screen and (max-width: 980px) {
@@ -392,6 +445,19 @@ footer {
     .boxes-card {
         margin: 0;
         padding: 10px;
+    }
+
+    .contact-info {
+        float: none;
+        width: 100%;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+        padding-top: 20px;
+        float: none;
+        width: 100%;
+        border: 0;
     }
 }
 
