@@ -370,7 +370,8 @@ footer {
     padding-top: 10px;
 }
 
-.contact-form form input {
+.contact-form form input,
+.contact-form form textarea {
     font-size: 16pt;
     grid-area: hd;
     padding: 10px;
@@ -379,7 +380,6 @@ footer {
 .contact-form button {
     font-size: 16pt;
     max-width: 60%;
-    float: right;
 }
 
 @media screen and (max-width: 980px) {
@@ -450,14 +450,36 @@ footer {
     .contact-info {
         float: none;
         width: 100%;
+        margin: 0;
     }
 
     .contact-form {
+        margin: 0;
         margin-top: 20px;
-        padding-top: 20px;
         float: none;
         width: 100%;
         border: 0;
+    }
+
+    .contact-form form div {
+        font-size: 14pt;
+        display: grid;
+        width: 95%;
+        padding: 10px 10px;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'lb lb lb lb lb lb'
+            'hd hd hd hd hd hd';
+    }
+
+    .boxes-info {
+        width: 95%;
+        display: block;
+        margin: 0;
+        border-top: 1px #b2b2b2 solid;
+        padding: 0;
+        text-align: left;
     }
 }
 
