@@ -81,6 +81,7 @@
     .post-content {
         flex-direction: column;
     }
+
     .sidebar {
         order: 2;
         max-width: 100%;
@@ -93,6 +94,7 @@
     .side-posts {
         border: 0;
     }
+
     .side-post-card img {
         width: 80%;
         height: auto;

@@ -70,6 +70,7 @@ header h1 img {
 a {
     color: #333333;
 }
+
 a:hover {
     color: red;
 }
@@ -208,6 +209,7 @@ header .nav li.active a {
 .post-card a {
     display: block;
 }
+
 .post-card img {
     width: 95%;
     height: auto;
@@ -354,6 +356,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 .contact-form form div {
     font-size: 16pt;
     display: grid;
@@ -386,6 +389,7 @@ footer {
     .container {
         width: 90%;
     }
+
     .menu-btn,
     .menu-btn::before,
     .menu-btn::after {
@@ -406,6 +410,7 @@ footer {
         width: 20%;
         align-items: center;
     }
+
     header .nav.active {
         display: block;
     }
