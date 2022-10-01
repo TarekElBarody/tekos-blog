@@ -17,7 +17,8 @@
 }
 
 .post-details {
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin: 5px;
     padding: 10px;
     border-top: 1px #b9b9b9 solid;
@@ -26,6 +27,10 @@
     font-weight: 600;
 }
 
+.post-details span {
+    display: flex;
+    flex-direction: row;
+}
 .post-body img {
     width: 100%;
     height: auto;
