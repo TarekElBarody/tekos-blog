@@ -12,3 +12,11 @@ https://tarekelbarody.github.io/tekos-blog/index.html
 -   Valid CSS & HTML with W3C Markup Validation Service.
 -   GTMetrix Grade A
 -   Dev tools lighthouse very good Accessibility & SEO & Performance
+
+## Dev tools lighthouse Screenshots
+
+![Image-Processing-API](assets/screenshot/001.png)
+
+## GTMetrix Grade Screenshots
+
+![Image-Processing-API](assets/screenshot/002.png)
