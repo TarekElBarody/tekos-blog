@@ -329,4 +329,22 @@ footer {
         grid-area: ft;
         border-top: 1px #d2d2d2 solid;
     }
+
+    header h1 {
+        text-align: left;
+        display: block;
+        order: 0;
+        width: 80%;
+        align-items: center;
+        font-size: 18pt;
+    }
+
+    header h1 img {
+        display: block;
+        float: left;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        align-items: center;
+    }
 }
