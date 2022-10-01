@@ -179,6 +179,7 @@ header .nav li.active a {
 }
 
 .post-card {
+    width: 33%;
     display: grid;
     margin: 5px 10px;
     border: 1px #b2b2b2 solid;
@@ -186,8 +187,12 @@ header .nav li.active a {
     border-radius: 2%;
     background-color: #f9f9f9;
     text-align: center;
+    /* grid-template-rows: 45% 20% 25% 10%; */
 }
 
+.post-card a {
+    display: block;
+}
 .post-card img {
     width: 95%;
     height: auto;
